@@ -12,6 +12,7 @@ class Docente(Persona):
         self.__contrato=contrato
 
     def __str__(self):
-        print(f"Los datos del docente son los siguiente: \n", super().__str__(), "\n Con tipo de contrato: ", self.getcontrato)
+        print ("Bienvenidos")
+        print(f"Los datos del docente son: \n", super().__str__(), "\n Con tipo de contrato: ", self.getcontrato)
 
 
