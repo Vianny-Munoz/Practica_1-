@@ -26,6 +26,12 @@ class GestorAdministrativos:
     def __init__(self):
         self.administrativos = {}
 
+    def agregar(self, nombre, edad, direccion, area, cargo):
+        if nombre in self.administrativos:
+            return False
+        self.administrativos[nombre] = Administrativo(nombre, nombre, edad, direccion, area, cargo)
+        return True
+
     def eliminar(self, nombre):
         if nombre not in self.administrativos:
             return False
