@@ -19,13 +19,13 @@ class Administrativo(Persona):
         self.__cargo=cargo
 
     def __str__(self):
-        print ("Welcome")
+    
         print(f"Los datos del Administrativo son: \n", super().__str__(), "\n Ubicado en el area: ", self.getarea, "\n Con cargo: ", self.getcargo)
 
 class GestorAdministrativos:
     def __init__(self):
         self.administrativos = {}
-        
+
     def eliminar(self, nombre):
         if nombre not in self.administrativos:
             return False
